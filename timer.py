@@ -1,23 +1,12 @@
-"""
-This program is used as an example for MGTC28.
-timer.py is a simple Python script that will allow user to set timer duration.
-Upon timer expiry, user will see the time up meme and sound notification.
-timer.py uses the time library to help keep track of time
-"""
+import time  
+import random  
+print("Players stand!")
 
+sleep_time = random.randint(10, 25)
 
-# This program is timer that counts down
+sit_down_list = []
 
-
-import time # The time library has a sleep function that will pause the script for a specifized amount of time
-from PIL import Image # the pillow library makes it easy to display images 
-
-im = Image.open("times-up.jpeg")
-
-# ask user to enter desired countdown time
-set_time = int(input("Please set your timer in seconds: "))
-
-time.sleep(set_time)
-
-im.show()
+print(f"You have between 10 and 25 seconds to sit down.")
+print("Enter the names of players who sit down one by one.")
+print("When no more players will sit down, type 'finish'.")
 
