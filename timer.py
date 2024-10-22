@@ -16,3 +16,12 @@ while time.time() - start_time < sleep_time:
     if player.lower() == 'finish':
         break
     sit_down_list.append(player)
+
+    time.sleep(sleep_time - (time.time() - start_time))  
+print("Time's Up!")
+
+if sit_down_list:
+    winner = sit_down_list[-1] 
+    print(f"The last person to sit down is {winner}. They win!")
+else:
+    print("No one sat down! Everyone is eliminated.")
