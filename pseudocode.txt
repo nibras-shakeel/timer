@@ -1,0 +1,44 @@
+Start the Game:
+
+Display "Players stand!" to indicate the start of the game.
+Set a Random Timer:
+
+Generate a random number between 10 and 25 seconds for the game duration.
+Store this random time as sleep_time.
+Initialize an Empty List:
+
+Create an empty list called sit_down_list to keep track of players who sit down.
+Prompt Players to Sit:
+
+Inform players that they can sit down within the random duration.
+Continuously prompt the user to enter the name of the player who sits down.
+Add each entered name to the sit_down_list.
+End the Prompt When Time's Up:
+
+While the program waits for the random sleep_time, allow players to keep entering names.
+If the user types "done", stop prompting for input.
+Display "Time's Up":
+
+After the random sleep duration ends, display "Time's Up!".
+Determine the Winner:
+
+Check if there are any players in the sit_down_list.
+If the list is not empty, declare the last person entered as the winner.
+If the list is empty (no one sat down), declare that everyone is eliminated.
+End the Game:
+
+Print the winner’s name if there is a winner, or announce that no one sat down.
+Detailed Steps:
+Print "Players stand!".
+Set sleep_time = random.randint(10, 25).
+Create an empty list sit_down_list = [].
+Print instructions: Inform players that they have between 10 and 25 seconds to sit down.
+Start a loop:
+Ask for player names while time.sleep_time is counting down.
+Append player names to sit_down_list.
+Break the loop if the user types "done".
+After sleep_time:
+Print "Time's Up!".
+Check if sit_down_list is not empty:
+If it contains names, print the last name in the list as the winner.
+If it is empty, print that everyone is eliminated.
